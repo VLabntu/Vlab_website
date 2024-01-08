@@ -1,23 +1,26 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  title: 'VLab website',
+  author: 'Bing Zhang Wang',
+  headerTitle: 'V.Lab',
+  description_lg: 'Where We Brainstrom Together!',
+  description_sm: 'where we brainstrom together!',
+  language: ['en-US', 'zh-TW'],
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://vlab.caece.vercel.app',
+  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog', //待更改
   siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  socialBanner: '/static/images/twitter-card.png',//待更改
+  mastodon: 'https://mastodon.social/@mastodonuser',//待更改
+  email: 'vlab@caece.net',
+  github: 'https://github.com',//待更改
+  twitter: 'https://twitter.com/Twitter',//無功能
+  facebook: 'https://www.facebook.com/vlab.ntu/?locale=zh_TW',
+  youtube: 'https://youtube.com',//待更改
+  linkedin: 'https://www.linkedin.com',//無功能
+  instagram: 'https://www.instagram.com/vlabntu/',
+  word: 'I am rock',
+  locale: 'en-US',//待更改
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
