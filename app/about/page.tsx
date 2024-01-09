@@ -28,7 +28,7 @@ export default function Page() {
       <AuthorLayout content={mainContent}>
         <MDXLayoutRenderer code={author.body.code} />
       </AuthorLayout>
-      <div className="w-full border-b border-gray-200 my-6"></div>
+      <div className="w-full border-b border-gray-200 dark:border-gray-700 my-3 mb-10"></div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ml-10">
         {members.map((member, index) => (
           <Members key={member.name} {...member} /> // 使用成員名稱作為 key
