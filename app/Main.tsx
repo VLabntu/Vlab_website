@@ -7,8 +7,6 @@ export default function Home({ posts }) {
     <>
       <Goal />
       <div className="w-full border-b border-gray-200 my-12"></div>
-      <Spaces/>
-      <div className="w-full border-b border-gray-200 my-12"></div>
       <RecentEvents posts={posts} />
       {/* <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-6 my-15">
         <div className="w-full md:w-1/2 md:ml-auto">  

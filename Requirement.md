@@ -34,7 +34,6 @@
   - 主內容 (Main Content)
     - 主頁 (Home) (展示實驗室的理念和關鍵服務)
       - 理念和關鍵服務 (Goal)v
-      - 空間介紹 (Spaces)v
       - 近期活動 (Recent Events)v
     - 服務 (Services) (詳細列出實驗室提供的各項服務)
       - 空間 (提供空間租借資訊)
@@ -48,6 +47,7 @@
       - 指導教授 (吳東諭)
       - 管理員 (莊世坤)
       - 工讀生們 (團隊成員介紹)
+      - 空間介紹 (Spaces)v
       - 聯絡資訊 (包括地址、電話號碼、電子郵件)
 
   - 頁腳 (Footer) v
@@ -171,5 +171,5 @@
 
 https://yqnn.github.io/svg-path-editor/ svg path 生成器好用
 https://simpleicons.org/?q=transla
-
+https://deepai.org/styles 字生圖
 Modal 好像是我需要的 https://nextui.org/docs/components/modal

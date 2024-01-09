@@ -10,13 +10,13 @@ const siteMetadata = {
   siteUrl: 'https://vlab.caece.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog', //待更改
   siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',//待更改
-  mastodon: 'https://mastodon.social/@mastodonuser',//待更改
+  socialBanner: '/static/images/twitter-card.png',//無功能
+  mastodon: 'https://mastodon.social/@mastodonuser',//無功能
   email: 'vlab@caece.net',
-  github: 'https://github.com',//待更改
+  github: 'https://github.com/VLabntu',
   twitter: 'https://twitter.com/Twitter',//無功能
   facebook: 'https://www.facebook.com/vlab.ntu/?locale=zh_TW',
-  youtube: 'https://youtube.com',//待更改
+  youtube: 'https://youtube.com',//無功能
   linkedin: 'https://www.linkedin.com',//無功能
   instagram: 'https://www.instagram.com/vlabntu/',
   word: 'I am rock',
