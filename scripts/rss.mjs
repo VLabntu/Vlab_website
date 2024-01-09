@@ -12,10 +12,10 @@ const generateRssItem = (config, post) => `
     <guid>${config.siteUrl}/blog/${post.slug}</guid>
     <title>${escape(post.title || '')}</title>
     <link>${config.siteUrl}/blog/${post.slug}</link>
-    ${post.summary ? `<description>${escape(post.summary)}</description>` : ''}
+    ${post.summary ? `<description>${escape(post.summary || '')}</description>` : ''}
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     <author>${config.email} (${config.author})</author>
-    ${post.tags ? post.tags.map((t) => `<category>${escape(t)}</category>`).join('') : ''}
+    ${post.tags ? post.tags.map((t) => `<category>${escape(t || '')}</category>`).join('') : ''}
   </item>
 `
 
