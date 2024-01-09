@@ -27,13 +27,17 @@ export default function Goal() {
         </h1>
 
         <div className="flex flex-row ">
-          <DirectButton href="https://docs.google.com/forms/d/e/1FAIpQLScm4fsWqR1h3o_clu2QnYJmlgx-221etysRYvFiG28o0qPYuw/viewform?pli=1">Software</DirectButton>
+          <DirectButton href="https://docs.google.com/forms/d/e/1FAIpQLScm4fsWqR1h3o_clu2QnYJmlgx-221etysRYvFiG28o0qPYuw/viewform?pli=1">
+            Software
+          </DirectButton>
           <div className="mx-3">
             {' '}
             {/* 可以根據需要調整間距 */}
             {/* 這裡插入一個空的div用來控制按鈕之間的距離 */}
           </div>
-          <DirectButton href="https://docs.google.com/forms/d/e/1FAIpQLScz_lQ7G657XUDtgyddbwwUgAemQ93gU_0d-tDcqtaHK3obgQ/viewform">Equipment</DirectButton>
+          <DirectButton href="https://docs.google.com/forms/d/e/1FAIpQLScz_lQ7G657XUDtgyddbwwUgAemQ93gU_0d-tDcqtaHK3obgQ/viewform">
+            Equipment
+          </DirectButton>
         </div>
       </div>
     </div>

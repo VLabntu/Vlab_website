@@ -5,7 +5,7 @@ import RecentEvents from './page_component/RecentEvents'
 export default function Home({ posts }) {
   return (
     <>
-      <Goal />  
+      <Goal />
       <RecentEvents posts={posts} />
     </>
   )

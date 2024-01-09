@@ -19,48 +19,51 @@ The main reason for making this is to be able to set up a website without purcha
 ## Features
 
 Pages
-  - Header
-    - Navigation Bar (on the left, includes the following links, and navigates to the corresponding page section when clicked)
-      - Home
-      - Services
-      - Events
-      - About Us
-    - Logo (in the center of the page, returns to the home page when clicked)
-      - Vlab (using black, tech-savvy fonts)
-    - Function Bar (on the right, provides various different functions)
-      - Language Switch (on the right, switch between English or Chinese)
-      - Search Bar (on the right, search for the latest information)
-      - Style Switch (divided into two different styles, dark and light)
-      - Catbutton (unknown function, currently planning to make something like a daily fortune)
 
-  - Main Content
-    - Home (show the lab's philosophy and key services)
-      - Philosophy and Key Services (Goal)
-      - Recent Events
-    - Services (detailed list of services provided by the lab)
-      - Space (provides space rental information)
-      - Equipment (lists available equipment)
-      - Website (provides details of website maintenance services)
-      - Software Installation (introduces software installation services)
-    - Events (show the events and major events held by the lab)
-      - Event Timeline (displays important events in a timeline format)
-      - Event Details (detailed introduction to each event)
-    - About Us (introduces the lab's management team and contact information)
-      - Advisor (Wu Dongyu)
-      - Administrator (Zhuang Shikun)
-      - Student Workers (team member introduction)
-      - Space Introduction (Spaces)
-      - Contact Information (including address, phone number, email)
+- Header
 
-  - Footer
-    - Copyright Information (copyright statement)
-    - Contact Information (including email, phone number)
-    - Address (the physical location of the lab, convenient for visitors to visit or contact)
-    - Social Media Links (Media) (provides external links to social media platforms)
-      - Facebook
-      - Instagram (IG)
-      - YouTube
-      - github
+  - Navigation Bar (on the left, includes the following links, and navigates to the corresponding page section when clicked)
+    - Home
+    - Services
+    - Events
+    - About Us
+  - Logo (in the center of the page, returns to the home page when clicked)
+    - Vlab (using black, tech-savvy fonts)
+  - Function Bar (on the right, provides various different functions)
+    - Language Switch (on the right, switch between English or Chinese)
+    - Search Bar (on the right, search for the latest information)
+    - Style Switch (divided into two different styles, dark and light)
+    - Catbutton (unknown function, currently planning to make something like a daily fortune)
+
+- Main Content
+
+  - Home (show the lab's philosophy and key services)
+    - Philosophy and Key Services (Goal)
+    - Recent Events
+  - Services (detailed list of services provided by the lab)
+    - Space (provides space rental information)
+    - Equipment (lists available equipment)
+    - Website (provides details of website maintenance services)
+    - Software Installation (introduces software installation services)
+  - Events (show the events and major events held by the lab)
+    - Event Timeline (displays important events in a timeline format)
+    - Event Details (detailed introduction to each event)
+  - About Us (introduces the lab's management team and contact information)
+    - Advisor (Wu Dongyu)
+    - Administrator (Zhuang Shikun)
+    - Student Workers (team member introduction)
+    - Space Introduction (Spaces)
+    - Contact Information (including address, phone number, email)
+
+- Footer
+  - Copyright Information (copyright statement)
+  - Contact Information (including email, phone number)
+  - Address (the physical location of the lab, convenient for visitors to visit or contact)
+  - Social Media Links (Media) (provides external links to social media platforms)
+    - Facebook
+    - Instagram (IG)
+    - YouTube
+    - github
 
 ## Quick Start Guide
 
