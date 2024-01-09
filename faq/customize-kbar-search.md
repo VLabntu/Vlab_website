@@ -30,12 +30,12 @@ export const SearchProvider = ({ children }) => {
             perform: () => router.push('/'),
           },
           {
-            id: 'projects',
-            name: 'Projects',
+            id: 'services',
+            name: 'Services',
             keywords: '',
             shortcut: ['p'],
             section: 'Home',
-            perform: () => router.push('/projects'),
+            perform: () => router.push('/services'),
           },
         ],
         onSearchDocumentsLoad(json) {
@@ -43,7 +43,7 @@ export const SearchProvider = ({ children }) => {
             id: post.path,
             name: post.title,
             keywords: post?.summary || '',
-            section: 'Blog',
+            section: 'Events',
             subtitle: post.tags.join(', '),
             perform: () => router.push(post.path),
           }))
