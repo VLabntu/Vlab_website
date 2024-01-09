@@ -8,11 +8,9 @@ import SearchButton from './SearchButton'
 import TranslateButton from './TranslateButton'
 import CatButton from './CatButton'
 
-
 const Header = () => {
   return (
     <header className="flex items-end justify-between py-10">
-      
       <div className="flex items-end space-x-4">
         {headerNavLinks
           .filter((link) => link.href !== '/')
@@ -25,8 +23,8 @@ const Header = () => {
               {link.title}
             </Link>
           ))}
-       </div>
-       
+      </div>
+
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">

@@ -9,8 +9,7 @@ const CatButton = () => {
     siteMetadata.search &&
     (siteMetadata.search.provider === 'algolia' || siteMetadata.search.provider === 'kbar')
   ) {
-    const CatButtonWrapper =
-      siteMetadata.search.provider === 'algolia' ? AlgoliaButton : KBarButton
+    const CatButtonWrapper = siteMetadata.search.provider === 'algolia' ? AlgoliaButton : KBarButton
 
     return (
       <CatButtonWrapper aria-label="Rock">
@@ -31,7 +30,6 @@ const CatButton = () => {
             strokeLinejoin="round"
             strokeWidth={0.2}
           />
-
         </svg>
       </CatButtonWrapper>
     )
@@ -39,5 +37,3 @@ const CatButton = () => {
 }
 
 export default CatButton
-
-

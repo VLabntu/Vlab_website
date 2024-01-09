@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, content }: Props) {
-  const { name, avatar, occupation, company, email, department} = content
+  const { name, avatar, occupation, company, email, department } = content
 
   return (
     <>
@@ -28,12 +28,12 @@ export default function AuthorLayout({ children, content }: Props) {
                   alt="avatar"
                   width={600}
                   height={400}
-                  className="h-48 w-60 transform group-hover:scale-110 transition-transform rounded-xl"
+                  className="h-48 w-60 transform rounded-xl transition-transform group-hover:scale-110"
                 />
               </div>
             )}
             <div className="flex items-center pb-2 pt-4">
-              <h3 className="text-2xl font-bold leading-8 tracking-tight ml-4">{name}</h3>
+              <h3 className="ml-4 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
             </div>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{department}</div>

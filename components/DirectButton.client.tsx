@@ -1,12 +1,12 @@
 'use client'
-import {Button} from "@nextui-org/react";
+import { Button } from '@nextui-org/react'
 import siteMetadata from '@/data/siteMetadata'
 import { useTheme } from 'next-themes'
 
 const DirectButton = ({ href, children }) => {
   const handleClick = () => {
-    window.location.href = href;
-  };
+    window.location.href = href
+  }
   const { theme, setTheme, resolvedTheme } = useTheme()
 
   // 根據主題設定按鈕樣式
@@ -20,16 +20,13 @@ const DirectButton = ({ href, children }) => {
     borderRadius: '10px',
     background: theme === 'dark' ? 'white' : 'black', // 根據主題變化背景顏色
     color: theme === 'dark' ? 'black' : 'white', // 根據主題變化文字顏色
-  };
-  
+  }
+
   return (
-    <Button
-      onClick={handleClick}
-      style={buttonStyle}
-    >
+    <Button onClick={handleClick} style={buttonStyle}>
       {children}
     </Button>
-  );
-};
+  )
+}
 
-export default DirectButton;
+export default DirectButton
