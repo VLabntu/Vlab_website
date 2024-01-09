@@ -11,7 +11,9 @@ Check out the documentation below to get started.
 ## Motivation
 
 The purpose of this side project is to transform it into the official website of our undergraduate civil engineering laboratory. We are different from general laboratories, with less research content, and our main tasks are to help the department maintain computer equipment, organize teaching activities, and handle network affairs.
+
 On the other hand, I took the Web Programming course from [Ric](https://www.ee.ntu.edu.tw/profile1.php?id=98) this semester. Although my performance in class was not very good, if I can apply what I have learned to practical applications, I think I can live up to the teacher.
+
 The main reason for making this is to be able to set up a website without purchasing wix. This can save departmental expenses. In conclusion, thank you all.
 
 ## Features
