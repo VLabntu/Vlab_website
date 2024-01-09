@@ -86,11 +86,11 @@ export default function ListLayoutWithTags({
         <div className="flex sm:space-x-24">
           <div className="hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md dark:bg-gray-900/70 dark:shadow-gray-800/40 sm:flex">
             <div className="px-6 py-4">
-              {pathname.startsWith('/blog') ? (
+              {pathname.startsWith('/events') ? (
                 <h3 className="font-bold uppercase text-primary-500">All Posts</h3>
               ) : (
                 <Link
-                  href={`/blog`}
+                  href={`/events`}
                   className="font-bold uppercase text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-500"
                 >
                   All Posts
@@ -133,11 +133,11 @@ export default function ListLayoutWithTags({
                         </dd>
                       </dl>
                       <div className="space-y-3">
-                        <div>
+                        <div> 
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link href={`/${path}`} className="text-gray-900 dark:text-gray-100">
-                              {title}
-                            </Link>
+                          <Link href={`/events/${path.replace(/^blog\//, '')}`} className="text-gray-900 dark:text-gray-100">
+                            {title}
+                          </Link>
                           </h2>
                           <div className="flex flex-wrap">
                             {tags?.map((tag) => <Tag key={tag} text={tag} />)}
@@ -156,7 +156,7 @@ export default function ListLayoutWithTags({
               <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
             )}
           </div>
-        </div>
+        </div>  
       </div>
     </>
   )
