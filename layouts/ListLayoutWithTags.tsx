@@ -133,11 +133,14 @@ export default function ListLayoutWithTags({
                         </dd>
                       </dl>
                       <div className="space-y-3">
-                        <div> 
+                        <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                          <Link href={`/events/${path.replace(/^blog\//, '')}`} className="text-gray-900 dark:text-gray-100">
-                            {title}
-                          </Link>
+                            <Link
+                              href={`/events/${path.replace(/^blog\//, '')}`}
+                              className="text-gray-900 dark:text-gray-100"
+                            >
+                              {title}
+                            </Link>
                           </h2>
                           <div className="flex flex-wrap">
                             {tags?.map((tag) => <Tag key={tag} text={tag} />)}
@@ -156,7 +159,7 @@ export default function ListLayoutWithTags({
               <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
             )}
           </div>
-        </div>  
+        </div>
       </div>
     </>
   )
