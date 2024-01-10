@@ -10,25 +10,24 @@ import { sortPosts } from 'pliny/utils/contentlayer.js'
 const generateRssItem = (config, post) => `
   <item>
     <guid>${config.siteUrl}/events/${post.slug}</guid>
-    <title>${escape(post.title)}</title>
+    <title>${post.title ? escape(post.title) : ''}</title>
     <link>${config.siteUrl}/events/${post.slug}</link>
-    ${post.summary && `<description>${escape(post.summary)}</description>`}
+    ${post.summary ? `<description>${escape(post.summary)}</description>` : ''}
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     <author>${config.email} (${config.author})</author>
-    ${post.tags && post.tags.map((t) => `<category>${t}</category>`).join('')}
+    ${post.tags ? post.tags.map((t) => `<category>${escape(t)}</category>`).join('') : ''}
   </item>
 `
-
 const generateRss = (config, posts, page = 'feed.xml') => `
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>${escape(config.title)}</title>
+      <title>${config.title ? escape(config.title) : ''}</title>
       <link>${config.siteUrl}/events</link>
-      <description>${escape(config.description)}</description>
+      <description>${config.description ? escape(config.description) : ''}</description>
       <language>${config.language}</language>
       <managingEditor>${config.email} (${config.author})</managingEditor>
       <webMaster>${config.email} (${config.author})</webMaster>
-      <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
+      <lastBuildDate>${posts.length > 0 ? new Date(posts[0].date).toUTCString() : ''}</lastBuildDate>
       <atom:link href="${config.siteUrl}/${page}" rel="self" type="application/rss+xml"/>
       ${posts.map((post) => generateRssItem(config, post)).join('')}
     </channel>
@@ -61,3 +60,4 @@ const rss = () => {
   console.log('RSS feed generated...')
 }
 export default rss
+
