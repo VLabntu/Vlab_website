@@ -10,12 +10,12 @@ import { sortPosts } from 'pliny/utils/contentlayer.js'
 const generateRssItem = (config, post) => `
   <item>
     <guid>${config.siteUrl}/events/${post.slug}</guid>
-    <title>${escape(post.title || '')}</title>
+    <title>${escape(post.title)}</title>
     <link>${config.siteUrl}/events/${post.slug}</link>
-    ${post.summary ? `<description>${escape(post.summary || '')}</description>` : ''}
+    ${post.summary && `<description>${escape(post.summary)}</description>`}
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     <author>${config.email} (${config.author})</author>
-    ${post.tags ? post.tags.map((t) => `<category>${escape(t || '')}</category>`).join('') : ''}
+    ${post.tags && post.tags.map((t) => `<category>${t}</category>`).join('')}
   </item>
 `
 
